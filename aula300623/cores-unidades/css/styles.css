@@ -1,0 +1,51 @@
+.red1, .red2, .red3 {
+    width: 200px;
+    height: 200px;
+}
+
+.red1 {
+    background-color: red; /*formato nomeado*/
+}
+
+.red2 {
+    background-color: #ff0000; /*formato hexadecimal*/
+}
+
+.red3 {
+    background-color: rgba(255, 0, 0, 0.5); /*formato rgba(red, green, blue e alpha). O alpha vai de 0 a 1*/
+}
+
+/*
+Unidades de medida
+-Absolutas: px (pixels) - mais utilizada, cm (centímetros), pt (ponto) - remetem a impressões (ex: word) e outras.
+
+-Relativas (baseada em algo): vh (viewport height), vw (viewport width).
+Utilizadas em fontes: em (elemento pai), rem (elemento raiz) 
+% (baseado no pai)
+*/
+
+/*px = será o mesmo independente*/
+.quadrado1 {
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+/*vw e vh = em relação a viewport*/
+.quadrado2 {
+    width: 60vw; /*60% da largura da view port*/
+    height: 50vh; /*50% da altura a view port */
+    background-color: #ff0000;
+}
+
+/*% = em relação ao elemento pai*/
+.quadrado3 {
+    background-color: rgb(131, 56, 43);
+    width: 50%; /*50% do elemento pai*/
+    height: 40%;
+}
+/* Dependendo das dimensões da imagem pode distorcer */
+.quadrado2 img {
+    width: 100%;
+    height: 100%;
+}
