@@ -1,0 +1,52 @@
+/*
+Box Model: Podemos configurar a aparênca da caixa dos elementos
+
+padding: preenchimento
+margin: espaçaemnto externo
+border: contorno
+*/
+
+
+.box1 {
+    background-color: aqua;
+    padding: 20px; /*Espaçamento (preenchimento
+    ) entre o texto e a box em todos os lados (cima, baixo, esquerda e direita)*/
+    text-align: justify;
+    margin: 20px; /*Espaçamento entre a box e as extremidades da página*/
+}
+
+.box2 {
+    background-color: greenyellow;
+    /*Utilizar sentido horário para designar cada lado.    top, right, bottom e left*/
+    padding: 10px 30px 50px 70px;
+
+    margin: 30px 10px 10px 10px;
+}
+
+.box3 {
+    background-color: brown;
+    /*Na borda são passados 3 valores, espessura, estilo (dashed, solid, dotted, double e mais. Ver na documentação todas as opções) e a cor*/
+    border: 8px double greenyellow;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 45px;
+}
+
+.box4 {
+    background-color: tomato;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid yellow;
+    /*Controle da área de conteúdo, área mais dentro do conteúdo*/
+    width: 200px;
+    height: 600px;
+    /*Ao inspecionar, a largura é determinada somando os valores de width com margin, padding e border se forem determinados*/
+    /*border-box ele usa o width e height como referencia de qual vai ser a dimensão da box, antes as dimensões eram determinadas somando width com padding e etc, agora a dimensão vai ser exatamente o que esta determinado no width e height mas ainda sim levando em consideração os outros estilos, padding, border...*/
+    box-sizing: border-box;
+}
+
+/*Seletor universal: seleciona todos os elementos da página*/
+* {
+    box-sizing: border-box; /*todos os elementos terão uma largura previsivel*/
+}
+
