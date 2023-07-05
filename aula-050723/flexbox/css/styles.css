@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 {
+    /* padding: 12px; */
+    background-color: brown;
+    display: flex; /*Ativa o flexbox, utilizado no container pai, principal*/
+    flex-direction: row; /*rowm, column são algumas das opções*/
+    flex-wrap: wrap; /*indica quebra de linha para os itens ao scrollar e não tiver espaço na tela*/
+    /*flex-flow: row wrap; /*flex-flow: row wrap; atalho para flex-direction e flex-wrap*/
+    justify-content: space-between; /*Ajustar os elementos no eixo main (center, end, start, etc)*/
+    align-items: flex-end; /*ajustar os elementos no eixo cross*/
+    align-content: space-around; /*só serve se tiver linhas, rows. move no vertical*/
+    height: 600px;
+
+}
+
+.item-1 {
+    background-color: orange;
+}
+
+.item-2 {
+    background-color: gold;
+}
+
+.item-3 {
+    background-color: pink;
+    /*flex-start, flex-end, center, stretch*/
+    align-self: baseline; /*alinhar no eixo cross individualmente*/ 
+}
+
+.item-4 {
+    background-color: cadetblue;
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+    width: 200px;
+    padding: 8px;
+}
+
+.container-2 {
+    background-color: chocolate;
+    height: 250px;
+    display: flex;
+}
+
+.coluna-1 {
+    background-color: burlywood;
+    /* width: 200px; */
+    flex: 2;
+}
+
+.coluna-2 {
+    background-color: aqua;
+    flex: 2; /*Ocupa uma porção do espaço disponível da tela, no caso somando com o flex debaixo, 3 espaços, então essa coluna ocupa 2/3*/
+}
+
+.coluna-3 {
+    background-color: violet;
+    flex: 1;
+}
