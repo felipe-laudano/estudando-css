@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section-articles {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article {
+    width: 480px;
+    background-color: bisque;
+    margin: 16px; /*Espaçamento*/
+    padding: 16px;
+    display: flex;
+    gap: 8px; /*Espaçamento entre a imagem e o paragrafo. Poderia ser usada uma margin direto na imagem ou no paragrafo*/
+    align-items: center;
+    border-radius: 12px;
+} 
+
+.article img {
+    width: 200px;
+    border-radius: 12px;
+} 
+
+.article p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+    .article {
+        flex-direction: column;
+    }
+    .article img {
+        width: 100%;
+    }
+    .article p {
+        padding: 16px;
+    }
+}
+
+/*overflow trabalha com textos quando os mesmos ultrapassem o limite designado, por exemplo: um grande texto ultrapassou o tamanho de um card, usa-se o overflow para adequar o texto ao card, ele pode gerar um scroll para o texto dentro do card ou ocultar o texto.*/

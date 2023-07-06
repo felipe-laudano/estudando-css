@@ -1,0 +1,25 @@
+/*
+Media Queries = regras especiais que podem ou não serem aplicadas, depende de uma condição para poder aplicar a estilização (tipo um if):
+
+@media condicao {
+    // estilos a serem aplicados caso a condição seja verdadeira
+}
+
+*/
+
+/*screen = se refere a dispositivos que tenham tela (tablet, mobile, desktop) de no máximo 599 pixels de largura*/
+@media screen and (max-width: 599px) {
+
+    body {
+        background-color: yellowgreen;
+        font-family: monospace;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    /*se a largura é maior ou igual a 600px e se a largura é menor ou igual a 1000px, OU SEJA, está entre 600px-1000px*/
+    body {
+        background-color: blueviolet;
+    }
+}
+
